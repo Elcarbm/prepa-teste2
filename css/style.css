@@ -1,0 +1,9 @@
+.nav-link:focus, .nav-link:hover {
+    color: red;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: red;
+}

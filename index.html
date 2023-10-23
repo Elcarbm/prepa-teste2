@@ -12,7 +12,7 @@
 
 <body>
 	<!--le nav no manome an le resk navigateu // navbar mis logo// le -->
-	<nav class="navbar navbar-light d-xs-none d-md-block">
+	<nav class="navbar navbar-light d-none d-md-block">
 		<div class="container">
 			<a class="navbar-brand" href="#">
 				<img src="./img/logo.svg" alt="" width="65" height="40">
@@ -37,7 +37,7 @@
 		</div>
 	</nav>
 
-	<nav class="navbar navbar-light fixed-top d-xs-block d-md-none" style="background-color: #fff;">
+	<nav class="navbar navbar-light fixed-top d-block d-md-none" style="background-color: #fff;">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
 				<img src="./img/logo.svg" alt="" width="65" height="40"></a>
@@ -82,15 +82,15 @@
 	<div class="container">
 		<div class="row ">
 			<div class="col-md-8">
-				<div class="row d-xs-none d-md-block">
+				<div class="row d-none d-md-block">
 					<img src="./img/image-web-3-desktop.jpg" alt="" width="100%">
 				</div>
-				<div class="row d-xs-block d-md-none">
+				<div class="row d-block d-md-none">
 					<img src="./img/image-web-3-mobile.jpg" alt="" width="100%">
 				</div>
 				<div class="row">
 					<div class="col-md-6 p-2">
-						<h1 class="display-4" style="font-weight: 700;">The Bright Future of Web 3.0?</h1>
+						<h1 class="display-4 lh-1"  style="font-weight: 700;">The Bright Future of Web 3.0?</h1>
 					</div>
 					<div class="col-md-6 p-3">
 						<p>We dive into the next evolution of the web that claims to put the power of the platforms back
@@ -130,14 +130,33 @@
 
 				<div class="card mb-4 rounded-0 border-0">
 					<div class="row">
-						<div class="col-xs-5 ">
+						<div class="col-4 d-none d-md-block ">
 							<img src="./img/image-retro-pcs.jpg" class="img-fluid" alt="...">
 						</div>
-						<div class="col-xs-7">
-							<div class="card-body">
-								<h4 class="card-title text-muted">01</h4>
-								<strong><a href="" class="card-text text-decoration-none">Reviving Retro PCs</a></strong>
-								<p class="card-text"><small class="text-muted">What happens when old PCs are givenmodern upgrades?</small></p>
+						<div class="col-4 d-block d-md-none ">
+							<img src="./img/image-retro-pcs.jpg" class="img-fluid" alt="...">
+						</div>
+						<!-- image à dupliqué // ok // ajout resp//copie collépour le 1// pour le 2 d-block d-md-none -->
+						<div class="col-8">
+							<!-- napina position le card d nréglèna le respo(d-none iz ref ts aseo// d none fotsn=xs) de le d-md-block hoe débloqué le restriction manombk @le md(val selon boot) -->
+							<div class="card-body d-none d-md-block  position-relative">
+								<!-- le h4 natao h3 -->
+								<!-- napina position eo @ le muted/ br -->
+								<h3 class="card-title text-muted position-absolute top-0 start-0">01</h3> <br>
+								<!-- nasina posiotion le après decoration non + br-->
+								<strong><a href="" class="card-text text-decoration-none position-absolute top-50 start-0 translate-middle-y">Reviving Retro PCs</a></strong> <br><br><br>
+								<!-- napina position après n le muted  -->
+								<p class="card-text"><small class="text-muted position-absolute bottom-0 start-0">What happens when old PCs are givenmodern upgrades?</small></p>
+							</div>
+							
+							<div class="card-body d-block d-md-none  position-relative">
+								<!-- reglage an le taille// h3 natao h2// le display-2 mampangeza an le soratra/: de le font-weight mampa gras//copie collé 2 -->
+								<h3 class="card-title text-muted position-absolute top-0 start-0 display-4" style="font-weight: 600;" >01</h3><br>
+								<!-- ajout fs-4// copie collé 2 -->
+								<strong><a href="" class="card-text text-decoration-none position-absolute top-50 start-0 translate-middle-y">Reviving Retro PCs</a></strong><br><br><br>
+								<!-- ajout fs-5//lh-2 // copie collé 2-->
+								<p class="card-text"><small class="text-muted position-absolute bottom-0 start-0">What happens when old PCs are givenmodern upgrades?</small></p>
+
 							</div>
 						</div>
 					</div>
@@ -152,14 +171,26 @@
 
 				<div class="card mb-4 rounded-0 border-0">
 					<div class="row">
-						<div class="col-xs-5 ">
+						<div class="col-4  d-none d-md-block ">
 							<img src="./img/image-top-laptops.jpg" class="img-fluid" alt="...">
 						</div>
-						<div class="col-xs-7">
-							<div class="card-body">
-								<h4 class="card-title text-muted">02</h4>
-								<strong><a href="" class="card-text text-decoration-none">Top 10 Laptops of 2022</a></strong>
-								<p class="card-text"><small class="text-muted">Our best picks for various needs and budgets.</small></p>
+						<div class="col-4 d-block d-md-none ">
+							<img src="./img/image-top-laptops.jpg" class="img-fluid" alt="...">
+						</div>
+						<div class="col-8">
+							<div class="card-body d-none d-md-block  position-relative">
+								<h3 class="card-title text-muted position-absolute top-0 start-0">02</h3><br>
+								<strong><a href="" class="card-text text-decoration-none position-absolute top-50 start-0 translate-middle-y">Top 10 Laptops of 2022</a></strong><br><br><br>
+								<p class="card-text"><small class="text-muted position-absolute bottom-0 start-0">Our best picks for various needs and budgets.</small></p>
+							</div>
+							<!-- duplcatat card-body -->
+							<div class="card-body d-block d-md-none  position-relative">
+								<!-- card-title text-muted position-absolute top-0 start-0 + display-4 + font-weight 600-->
+								<h3 class="card-title text-muted position-absolute top-0 start-0 display-4" style="font-weight: 600;" >02</h3><br>
+								<!-- class="card-text text-decoration-none position-absolute top-50 start-0 translate-middle-y -->
+								<strong><a href="" class="card-text text-decoration-none position-absolute top-50 start-0 translate-middle-y">Top 10 Laptops of 2022</a></strong><br><br><br>
+								<!-- text-muted position-absolute bottom-0 start-0 -->
+								<p class="card-text"><small class="text-muted position-absolute bottom-0 start-0">Our best picks for various needs and budgets.</small></p>
 							</div>
 						</div>
 					</div>
@@ -173,15 +204,27 @@
 
 
 				<div class="card mb-4 rounded-0 border-0">
-					<div class="row">
-						<div class="col-xs-5 ">
+					<!-- nasina marge mba ho hita aoly le contenu -->
+					<div class="row mb-5">
+						<div class="col-4 d-none d-md-block">
 							<img src="./img/image-gaming-growth.jpg" class="img-fluid" alt="...">
 						</div>
-						<div class="col-xs-7">
-							<div class="card-body">
-								<h4 class="card-title text-muted">03</h4>
-								<strong><a href="" class="card-text text-decoration-none">The Growth of Gaming</a></strong>
-								<p class="card-text"><small class="text-muted">How the pandemic has sparked fresh opportunities.</small></p>
+						<div class="col-4 d-block d-md-none ">
+							<img src="./img/image-gaming-growth.jpg" class="img-fluid" alt="...">
+						</div>
+						<div class="col-8">
+							<div class="card-body d-none d-md-block  position-relative">
+								<h3 class="card-title text-muted position-absolute top-0 start-0">03</h3> <br>
+								<strong><a href="" class="card-text text-decoration-none position-absolute top-50 start-0 translate-middle-y">The Growth of Gaming</a></strong><br><br><br>
+								<p class="card-text"><small class="text-muted position-absolute bottom-0 start-0">How the pandemic has sparked fresh opportunities.</small></p>
+							</div>
+							<!-- mobile -->
+							<!-- ajout position-relative card-body -->
+							<div class="card-body d-block d-md-none position-relative mb-0">
+								<!-- copie collé 2 -->
+								<h3 class="card-title text-muted position-absolute top-0 start-0 display-4" style="font-weight: 600;" >03</h3><br>
+								<strong><a href="" class="card-text text-decoration-none position-absolute top-50 start-0 translate-middle-y">The Growth of Gaming</a></strong><br><br><br>
+								<p class="card-text"><small class="text-muted position-absolute bottom-0 start-0">How the pandemic has sparked fresh opportunities.</small></p>
 							</div>
 						</div>
 					</div>
